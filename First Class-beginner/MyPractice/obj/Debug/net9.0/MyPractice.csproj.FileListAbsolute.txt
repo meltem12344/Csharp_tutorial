@@ -1,0 +1,14 @@
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\bin\Debug\net9.0\MyPractice.exe
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\bin\Debug\net9.0\MyPractice.deps.json
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\bin\Debug\net9.0\MyPractice.runtimeconfig.json
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\bin\Debug\net9.0\MyPractice.dll
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\bin\Debug\net9.0\MyPractice.pdb
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\obj\Debug\net9.0\MyPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\obj\Debug\net9.0\MyPractice.AssemblyInfoInputs.cache
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\obj\Debug\net9.0\MyPractice.AssemblyInfo.cs
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\obj\Debug\net9.0\MyPractice.csproj.CoreCompileInputs.cache
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\obj\Debug\net9.0\MyPractice.dll
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\obj\Debug\net9.0\refint\MyPractice.dll
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\obj\Debug\net9.0\MyPractice.pdb
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\obj\Debug\net9.0\MyPractice.genruntimeconfig.cache
+C:\Users\hakan\OneDrive\Masaüstü\CSharpPractice\MyPractice\obj\Debug\net9.0\ref\MyPractice.dll
