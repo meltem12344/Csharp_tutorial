@@ -63,3 +63,23 @@ Namespace’ler çok artınca, bunları saklayan derlenmiş dosyalar devreye gir
 
 **Assembly = .exe veya .dll dosyasıdır.**  
 Kodun derlenmiş halini disk üzerinde temsil eder.
+
+---
+
+## Visual Studio Code uygulamasında direkt c# dosyası açarak pratik yapamadım neden?
+
+Çünkü yukarıda da bahsettiğim gibi c#'ta kodu çalıştırırken **ilk önce derlenmesi şart sonrasında çalıştırılıyor kodlar.** Burada derleme yapılırken bir kaç bilginin bilinmesi gerekiyor mesela **çalışacağı .NET sürümü ne?**, **hangi paketler kullanılıyor**, **konsol uygulaması mı? yoksa web mi?** gibi bilgiler tutulan bir dosyanın da bulunması gerekiyor bu nedenle proje oluşturmalıyız bunu nasıl yapıyoruz VS Code'da?
+
+1. Boş bir klasör oluştur pc'nde.
+2. Bu klasörü VS Code'da aç.
+3. Yeni terminal aç.
+4. Terminale ==> **dotnet new console -n NameofThefolder** bu kodu yaz. Proje ortamınız hazır oldu.
+5. Şimdi default olarak açılan c# dosyamıza erişelim bunu yapmak için yukarıdaki kodda NameofThefolder kısmına yazdığımız klasör isminin içine girelim ==>
+    **cd NameofThefolder** kodu ile.
+6. Bu klasörün içinde program.cs adında bir dosya olacak bu otomatik oluşturuluyor. çalıştırmak için **dotnet run** komutunu kullanmamız yeterli olacaktır.
+
+**!!** Ayrıca bu klasörün içinde **MyPractice.csproj** adında bir dosya olacak işte bu kodların hepsini çalıştırma amacımız bu dosyanın oluşturulması, peki ne var bu dosyada? En başta değindiğimiz gibi içinde hangi .NET sürümünü kullanacağımız, konsol uygulaması mı web mi gibi derlenirken mutlaka olması gereken bilgiler var.
+
+Son olarak Visiual Studio'da tek bir cs dosyası açman demek arkada sen görmeden bir proje oluşturulması demektir. VS Code'da ise bunu tek bir cs dosyası açarak yapamayız.
+
+---
