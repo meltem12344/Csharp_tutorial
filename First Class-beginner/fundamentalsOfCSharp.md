@@ -83,3 +83,38 @@ Kodun derlenmiş halini disk üzerinde temsil eder.
 Son olarak Visiual Studio'da tek bir cs dosyası açman demek arkada sen görmeden bir proje oluşturulması demektir. VS Code'da ise bunu tek bir cs dosyası açarak yapamayız.
 
 ---
+
+## Tür dönüşümleri?
+1. İmplicit type conversion => direkt olarak izin verilen bir dönüşümü yapabiliyorsun bu dönüşümde.
+Örnek: 
+            **byte number = 1;**      (                           00000001)
+            **int i = number;**       (00000000 00000000 00000000 00000001)     
+      
+**!!** Yukarıdaki kodda number ilk önce 1 değeri bir byte'lık bir değişkende tutuluyor. Bu 1 değeri sonrasında int türünde i değişkenine atıyoruz burada herhangi bir memory sorunu olmaz, byte int'dan daha küçük olduğu için veri kaybı olmayacak ve hata almayacağız.
+
+
+
+2. Explicit type conversion(casting) => bu veri kaybı sorunundan doğan bir dönüşüm türüdür.
+Örnek:
+            **int number = 300;**
+            **byte i = number;**
+**!!** Bu kodda hata var neden mi? byte in alabileceği max değer 255'tir. ama biz bu kodda byte türünde olan i değişkenine 300 değerini atamaya çalışıyoruz veri kaybı oluyor burada program bunu çalıştırmaz hata gösterir bize.
+
+Bu sorunu ortadan kaldırmak için C# dili bize bir seçenek sunuyor eğer biz veri kaybını göze almak istiyorsak değişkenin başına parantez içinde dönüştürüleceği veri tipi yazılır.
+Örnek:
+            **int number = 300;**
+            **byte i = (byte)number;**
+            **float f = 1.0f;**
+            **int i = (int)f;**
+
+            
+3. Conversion between non-compatible types => bazen uyumlu olmayan türler arasında dönüşüm yapmak isteyebiliriz. tabii ki direkt olarak **şu şekilde yapamayız**:
+            **string s = "1";**
+            **int i = (int)s;**
+Convert class ya da Parse methoduyla yapılabilir böyle bir dönüşüm:
+Örnek:
+            **string s = "1";**
+            **int i = Convert.ToInt32(s);** ToByte(), ToInt16()[short], ToInt32()[int], ToInt64()[long]
+            **int j = int.Parse(s);**  bu Parse methodu string alır ve onu hedef türe dönüştürür.
+
+---
